@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A-Frame Hello World</title>
+	<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+</head>
+<body>
+	<a-scene>
+		<a-box position="0 2 -5" rotation="0 45 45" scale="2 2 2" color="red">
+			<a-animation attribute="rotation" from="0 45 45" to="0 410 410" direction="alternative" dur="4000" repeat="indefinite" easing="ease"></a-animation>
+		</a-box>
+		<a-sky color="#94c5d6"></a-sky>
+		<a-light type="directional" color="#FFF" intensity="0.5" position="-1 1 2"></a-light>
+		<a-entity position = "0 0 5"><a-camera><a-cursor></a-cursor></a-camera></a-entity>
+	</a-scene>
+</body>
+</html>
